@@ -16,28 +16,19 @@ function additem(){
 }
 
 
-
     		// Get the form and file field
+    let file = document.querySelector('#addpicture');
+    let app = document.querySelector('#pictures_section');
 
-            		let file = document.querySelector('#addpicture');
-            		let app = document.querySelector('#pictures_section');
-
-            		/**
-            		 * Log the uploaded file to the console
-            		 * @param {event} Event The file loaded event
-            		 */
-            		function logFile (event) {
-            			let str = event.target.result;
-            			let img = document.createElement('img');
-            			img.src = str;
-            			app.append(img);
+    function logFile (event) {
+        let str = event.target.result;
+        let img = document.createElement('img');
+       	img.src = str;
+       	app.append(img);
             			console.log(str);
             		}
 
-            		/**
-            		 * Handle submit events
-            		 * @param  {Event} event The event object
-            		 */
+
             		function handleSubmit (event) {
 
             			// Stop the form from reloading the page
