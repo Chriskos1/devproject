@@ -25,31 +25,31 @@ function additem(){
         let img = document.createElement('img');
        	img.src = str;
        	app.append(img);
-            			console.log(str);
-            		}
+       	console.log(str);
+       	}
 
 
-            		function handleSubmit (event) {
+       	function handleSubmit (event) {
 
             			// Stop the form from reloading the page
-            			event.preventDefault();
+          	event.preventDefault();
 
             			// If there's no file, do nothing
-            			if (!file.value.length) return;
+           	if (!file.value.length) return;
 
             			// Create a new FileReader() object
-            			let reader = new FileReader();
+           	let reader = new FileReader();
 
             			// Setup the callback event to run when the file is read
-            			reader.onload = logFile;
+           	reader.onload = logFile;
 
             			// Read the file
-            			reader.readAsDataURL(file.files[0]);
+           	reader.readAsDataURL(file.files[0]);
 
-            		}
+           	}
 
             		// Listen for submit events
-            		form.addEventListener('submit', handleSubmit);
+        	form.addEventListener('submit', handleSubmit);
 
 function deleteitem(){
 
