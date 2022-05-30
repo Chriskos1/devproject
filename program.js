@@ -6,16 +6,59 @@ function additem(){
     para.appendChild(textNode);
     document.getElementById("pictures_section").appendChild(para);
 
+    //const image_input = document.querySelector("#addpicture");image_input.addEventListener("change", function() {
+      //const reader = new FileReader();
+      //reader.addEventListener("load", () => {
+        //const uploaded_image = reader.result;
+        //document.querySelector("#pictures_section").style.backgroundImage = `url(${uploaded_image})`;
+     // });
 
 }
-    const image_input = document.querySelector("#addpicture");image_input.addEventListener("change", function() {
-      const reader = new FileReader();
-      reader.addEventListener("load", () => {
-        const uploaded_image = reader.result;
-        document.querySelector("#pictures_section").style.backgroundImage = `url(${uploaded_image})`;
-      });
-      reader.readAsDataURL(this.files[0]);
-    });
+
+
+
+    		// Get the form and file field
+
+            		let file = document.querySelector('#addpicture');
+            		let app = document.querySelector('#pictures_section');
+
+            		/**
+            		 * Log the uploaded file to the console
+            		 * @param {event} Event The file loaded event
+            		 */
+            		function logFile (event) {
+            			let str = event.target.result;
+            			let img = document.createElement('img');
+            			img.src = str;
+            			app.append(img);
+            			console.log(str);
+            		}
+
+            		/**
+            		 * Handle submit events
+            		 * @param  {Event} event The event object
+            		 */
+            		function handleSubmit (event) {
+
+            			// Stop the form from reloading the page
+            			event.preventDefault();
+
+            			// If there's no file, do nothing
+            			if (!file.value.length) return;
+
+            			// Create a new FileReader() object
+            			let reader = new FileReader();
+
+            			// Setup the callback event to run when the file is read
+            			reader.onload = logFile;
+
+            			// Read the file
+            			reader.readAsDataURL(file.files[0]);
+
+            		}
+
+            		// Listen for submit events
+            		form.addEventListener('submit', handleSubmit);
 
 function deleteitem(){
 
