@@ -1,16 +1,16 @@
 img {
     max-width: 220px;
     max-height: 150px;
-}
-picture {
-  float: right;
+}figcaption {
+
   width: 58%;
   text-align: center;
   font-style: italic;
   font-size: smaller;
-  text-indent: 0;
+  text-indent: 5;
   margin: 0.5em;
-  padding: 0.5em;
+  padding: 0.5 em;
+
 }
 .page {
     position: relative;
@@ -140,6 +140,8 @@ body {
 .container {
     width: 100%;  
     min-height: 50vh;
+
+
    
    
     display: grid;

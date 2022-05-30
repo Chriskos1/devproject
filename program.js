@@ -1,10 +1,14 @@
 function additem(){
 
-    const item = document.getElementById("adddescription").value;
+    const item = document.getElementById("addescription").value;
     const para = document.createElement("figcaption");
     const textNode = document.createTextNode(item);
     para.appendChild(textNode);
     document.getElementById("pictures_section").appendChild(para);
+
+
+    var elem = document.createElement("img");
+    document.getElementById("placehere").appendChild(elem);
     
 
     const image_input = document.querySelector("addpicture");image_input.addEventListener("change", function() {
@@ -20,9 +24,11 @@ function additem(){
 
 function deleteitem(){
 
-    var element = document.getElementById("delete");
-    var comp = document.getElementById("pictures_section");
-    if (element == comp){
+    var element = document.getElementById("delete").value;
+
+    if(element == document.getElementById().value){
+
 	element.parentNode.removeChild(element);
-}
+	}
+
 }

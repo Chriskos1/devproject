@@ -19,37 +19,37 @@
  
 <body>
      <div class="container" id = "pictures_section">
-        <picture>
-        <img src="pictures/Amsterdam.jpg" alt="weed" id = "Amsterdam">
+        <div id = "Amsterdam">
+        <img src="pictures/Amsterdam.jpg" alt="weed" >
         <figcaption>Fig.1 - Weed is allowed in this country and this cities is under the level of ocean.</figcaption>
-        </picture>
-        <picture>
-        <img src="pictures/bruxelle.jpg" alt="gauffre" id="Brussel">
+        </div>
+        <div id = "Brussel">
+        <img src="pictures/bruxelle.jpg" alt="gauffre" >
         <figcaption>Fig.2 - They are known for theit fries and for their gauffre's (carefull I am not talking about an animal).</figcaption>
-        </picture>
-        <picture>
-        <img src="pictures/Bucharest.jpg" alt="find" id ="Bucharest">
-        <figcaption>Fig.3 - This city has the heaviest and largest building in the world.It also has the longest boulevard in Europe</figcaption></picture>
-        <picture>
-        <img src="pictures/Madrid.jpg" alt="monarchy" id ="Madrid" >
+        </div>
+        <div id ="Bucharest">
+        <img src="pictures/Bucharest.jpg" alt="find" >
+        <figcaption>Fig.3 - This city has the heaviest and largest building in the world.It also has the longest boulevard in Europe</figcaption></div>
+        <div id ="Madrid">
+        <img src="pictures/Madrid.jpg" alt="monarchy"  >
         <figcaption>Fig.4 - 2nd biggest city of Europe and it's monarchy has french roots</figcaption>
-        </picture>
-        <picture>
-        <img src="pictures/Paris.jpg" alt="baguette" id ="Paris">
+        </div>
+        <div id ="Paris">
+        <img src="pictures/Paris.jpg" alt="baguette" >
         <figcaption>Fig.5 - City of love and of light.</figcaption>
-        </picture>
-        <picture>
-        <img src="pictures/Prague.jpg" alt="gauffre" id="Prague">
+        </div>
+        <div id="Prague">
+        <img src="pictures/Prague.jpg" alt="gauffre" >
         <figcaption>Fig.6 - The City of a Hundred Spires.</figcaption>
-        </picture>
-        <picture>
-        <img src="pictures/Rome.jpg" alt="pizza" id="Roma">
+        </div>
+        <div id="Roma">
+        <img src="pictures/Rome.jpg" alt="pizza" >
         <figcaption>Fig.7 - It's a hometown of the language that is the root of most european current languages</figcaption>
-        </picture>
-        <picture>
-        <img src="pictures/Vienna.jpg" alt="snowglobes" id="Vienna">
+        </div>
+        <div id="Vienna">
+        <img src="pictures/Vienna.jpg" alt="snowglobes" >
         <figcaption>Fig.8 - City of dreams. In this city the snowglobes were invented.</figcaption>
-        </picture>
+        </div>
 </div> 
 <script src="program.js"></script>
         
@@ -66,9 +66,9 @@
                         <button onclick="deleteitem()">Submit</button>
                     </form>
                     <form><h3>II/ To add an image you need first of all to find a suitting riddle for it ;)</h3>
-                        <label for="add">Enter it here -></label>
-                        <input type="text" name="adddescription" id ="adddescription" required minlength ="4" size ="20">
-                        <label for ="adddescription">Now add a picture -></label>
+                        <label for="addescription">Enter it here -></label>
+                        <input type="text" name="adddescription" id ="addescription" required minlength ="4" size ="20">
+                        <label for ="addpicture">Now add a picture -></label>
                         <input type="file"  id="addpicture" name="name" accept="image/jpeg, image/png, image/jpg"> 
                         <button onclick="additem()">Submit</button>
                     </form>
