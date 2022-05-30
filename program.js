@@ -20,7 +20,14 @@ function additem(){
 function deleteitem(){
 
     var element = document.getElementById("delete").value;
-
+    var Amsterdam = document.getElementById("Amsterdam").value;
+    var Brussel = document.getElementById("Brussel").value;
+    var Paris = document.getElementById("Paris").value;
+    var Roma = document.getElementById("Roma").value;
+    var Vienna = document.getElementById("Vienna").value;
+    var Prague = document.getElementById("Prague").value;
+    var Madrid = document.getElementById("Madrid").value;
+    var Bucharest =document.getElementById("Bucharest").value;
     if(element == Amsterdam || element == Brussel || element == Paris || element == Roma || element == Vienna || element == Prague || element == Madrid || element == Bucharest ){
 
 	element.parentNode.removeChild(element);
